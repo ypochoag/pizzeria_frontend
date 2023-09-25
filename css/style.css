@@ -48,11 +48,12 @@ h1{
 
 .nav-bar{
     display:flex;
+
 }
 
 
 .enlaces{
-    color: white;
+
     list-style: none;
     display:flex;
     margin-right: 20px;
@@ -61,19 +62,110 @@ h1{
     line-height: 19px;
 }
 
-.nav-bar ul li {
+.nav-bar ul li{
     margin-left: 13px;
 }
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /*Style Main*/
 
 main{
-    width: 94%;
-    margin: 3%;
-    display: inline-flex;
-    box-shadow: 0px 4px 4px 0px rgba(244, 245, 226, 0.781); 
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: 0px 4px 4px 0px rgba(244, 245, 226, 0.781);  
     align-items: center;
     border-radius: 5px;
+    font-size: 16px;
     color: #FC200C;
-    font-size: 24px;
+    background: #F3F3F3;
 }
+
+.promocion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Pizzero{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Pizzero h2{
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    gap: 6px;
+}
+
+#comprando{
+    display: flex;
+    color: #FFF;
+}
+
+.toppizzas{
+    width: 491px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    padding: 20px 70px 50px 80px;
+    gap:50px;
+}
+
+.pizzaslista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #222222;
+    gap: 80px;
+}
+
+.topcinco{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.topcinco ol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+}
+
+/*Style footer*/
+footer{
+    width: 100%;
+    padding: 15px;
+    background-color: #222222;
+    display: flex;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    justify-content: space-between;
+}
+
+.footerInf{
+    display: flex;
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.footerInf li a{
+    text-decoration: none;
+    color: white;
+}
+
