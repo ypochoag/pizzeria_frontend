@@ -21,6 +21,10 @@ header{
     justify-content: space-between;
 }
 
+.barra-solid{
+    display: none;
+}
+
 .logo{
     display:flex;
     align-items: center;
@@ -53,7 +57,6 @@ h1{
 
 
 .enlaces{
-
     list-style: none;
     display:flex;
     margin-right: 20px;
@@ -87,8 +90,10 @@ main{
 
 .promocion{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    gap: 10px;
 }
 
 .Pizzero{
@@ -113,13 +118,15 @@ main{
     color: #FFF;
 }
 
+
 .toppizzas{
-    width: 491px;
+    width: 460px;
     display: flex;
     flex-direction: column;
     background-color: #FFF;
     padding: 20px 70px 50px 80px;
     gap:50px;
+    border-radius: 5px;
 }
 
 .pizzaslista{
@@ -169,3 +176,37 @@ footer{
     color: white;
 }
 
+
+/*------------Media Query-----------------*/
+@media (max-width: 481px){   
+    
+    .nav-bar{
+        display:none;
+    }
+    
+    .barra-solid{
+        display: flex;
+    }
+    
+    
+    /*Style Main*/
+     
+    .promocion{
+        flex-direction: column-reverse;
+    }
+    
+    .Pizzero{
+        margin-top: 20px ;
+    }
+    
+    .imgPizzero{
+        width: 100%;
+    }
+    .toppizzas{
+        width: 100%;
+    }
+    /*Style footer*/
+    footer{
+        flex-direction: row-reverse;
+    }
+}
